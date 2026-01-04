@@ -1,0 +1,112 @@
+body {
+    font-family: TTLakes, sans-serif;
+    background-color: #F8F8F8;
+}
+
+.header__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size:16px;
+    color: #7E7E82;
+    margin-left:40px;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.header {
+    display:flex;
+    border-top: 1px solid #D9FFF5;
+}
+
+.read-more__button {
+    display: flex; 
+	justify-content: center;
+	align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top:40px;
+    margin-left:30px;
+} 
+
+.header {
+    background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+
+.card-container {
+    margin-top: 25px;
+}
+
+.card-container__card {
+    background-image: url("icons/go.svg");
+    background-color: white;
+    background-repeat:no-repeat;
+    background-position: 185px center;
+    border-radius:6px;
+    border: 1px solid #EAEAEA;
+    position:relative;
+    width:240px;
+    height:72px;
+    margin:0;
+    padding:0;        
+}
+
+.card-container__img--position {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);  
+}
+
+.swiper {
+    width:100%;
+    height:120px;
+    margin-top:16px;
+    
+}
+
+.swiper-wrapper {
+    padding-left:16px;
+    height:72px;
+}
+
+.swiper-slide {
+    width:240px;
+    padding:0;
+    margin:0;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color:#DDDDDD;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  left: 0;
+  top: 90px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
+
+.main-container::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 81px;
+  right: 0;
+  top: 90px;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(248, 248, 248, 1), rgba(248, 248, 248, 0));
+  z-index: 2;
+}
